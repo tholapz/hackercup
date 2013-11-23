@@ -57,11 +57,11 @@ fs.readFile(process.argv[2], 'utf8', function  (err, data) {
 		}
 		str = str.concat('\n')
 	}
-	console.log(str)
-	//fs.writeFile("xxx.txt", str, function  (err) {
-	//	if(err) console.log(err)
-	//	console.log('pass')
-	//})
+	// console.log(str)
+	fs.writeFile("q2.txt", str, function  (err) {
+		if(err) console.log(err)
+		console.log('pass')
+	})
 		
 })
 
